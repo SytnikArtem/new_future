@@ -1,0 +1,985 @@
+@import "fonts"
+@import "vars"
+.title
+  &_services
+    font-size: 88px
+  &_white
+    color: #ffffff
+.services
+  padding: 365px 0 55px
+  &-text
+    color: #878787
+    font-family: "MuseoSansCyrl-500"
+    font-size: 16px
+    line-height: 24px
+    margin-top: 20px
+    &-span
+      display: inline-block
+    &_white
+      color: #ffffff
+  &-link
+    color: #1b1b1b
+    font-family: "MuseoSansCyrl-900"
+    font-size: 14px
+    padding-left: 25px
+    margin-top: 65px
+    display: inline-block
+    text-decoration: none
+    background: url(../img/arrow-down.svg) no-repeat left center
+    background-size: 9px 6px
+    &_white
+      color: #ffffff
+      background: url(../img/arrow-down2.svg) no-repeat left center
+      background-size: 9px 6px
+  &-main
+    background: $dark
+    padding: 150px 0 90px
+  &-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item
+    width: 33.33%
+    position: relative
+    margin-bottom: 20px
+    &-label
+      color: rgba(255, 255, 255, 0.6)
+      font-family: "MuseoSansCyrl-900"
+      font-size: 12px
+      text-transform: uppercase
+    &-svg
+      position: absolute
+      top: 40px
+      left: 40px
+    &-title
+      color: #ffffff
+      font-family: "MuseoSansCyrl-900"
+      font-size: 40px
+      line-height: 0.85
+      margin-top: 10px
+      min-height: 68px
+      &_sm
+        font-size: 30px
+    &-text
+      color: #c8c8c8
+      font-family: "MuseoSansCyrl-300"
+      font-size: 16px
+      line-height: 20px
+      margin-top: 30px
+      &-span
+        display: inline-block
+    &-block
+      display: flex
+      text-decoration: none
+      padding: 180px 50px 40px 40px
+      height: 100%
+      transition: all .5s ease
+      box-shadow: 0 43px 32px transparent
+      &:hover
+        background: #222222
+        box-shadow: 0 43px 32px rgba(0, 0, 0, 0.22)
+        .price-value
+          color: #e90e47
+    &-link
+      width: 50px
+      height: 50px
+      background-color: #323232
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-top: 25px
+      svg
+        transform: rotate(-90deg)
+    &-bottom
+      margin-top: 30px
+    &-flex
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      flex-direction: column
+.price
+  &-text
+    color: #979797
+    font-family: "MuseoSansCyrl-900"
+    font-size: 12px
+    text-transform: uppercase
+  &-value
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    color: #ffd800
+    font-family: "MuseoSansCyrl-900"
+    font-size: 40px
+    line-height: 1
+    margin-top: 5px
+    transition: color .5s ease
+    &_dark
+      color: $dark
+    &-currency
+      font-size: 24px
+      line-height: 1.5
+.header
+  &_white
+    .header-phone-link, .menu-item-link
+      color: #ffffff
+    .menu-line
+      background: #ffffff
+.btn
+  &_white
+    background: #e6e6e6
+    color: $dark
+.visit
+  padding: 350px 0 60px
+  overflow: hidden
+  background: $dark
+  &-main
+    padding: 110px 0 110px
+    background: #ffffff
+    position: relative
+    z-index: 3
+  &-content
+    max-width: 700px
+    margin: 0 auto
+    padding-left: 35px
+  &-flex
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+  &-left
+    width: 100%
+    &-item
+      font-family: "MuseoSansCyrl-500"
+      font-size: 16px
+      line-height: 24px
+      color: #1b1b1b
+      padding-left: 25px
+      position: relative
+      margin-bottom: 20px
+      &-span
+        color: #767676
+        font-family: "MuseoSansCyrl-500Italic"
+        font-size: 14px
+        padding-left: 5px
+      &:before
+        content: ''
+        position: absolute
+        width: 4px
+        height: 4px
+        background-color: #4a4a4a
+        border-radius: 50%
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+  &-right
+    width: 385px
+    flex-shrink: 0
+    position: absolute
+    right: 0
+    padding: 0 40px
+    &-label
+      color: #7a7a7a
+      font-family: "MuseoSansCyrl-900"
+      font-size: 12px
+      text-transform: uppercase
+      margin-bottom: 15px
+    &-title
+      font-family: "MuseoSansCyrl-900"
+      font-size: 40px
+      line-height: 0.85
+    &-block
+      margin-bottom: 35px
+    &-present
+      color: #e90e47
+      font-family: "MuseoSansCyrl-900"
+      font-size: 12px
+      text-transform: uppercase
+      padding: 5px 0 5px 25px
+      background: url(../img/gift.svg) no-repeat left top 2px
+      background-size: 19px 18px
+    &-item
+      color: #4a4a4a
+      font-family: "MuseoSansCyrl-500"
+      font-size: 14px
+      line-height: 24px
+      margin: 5px 0
+    &-list
+      margin: 10px 0 35px
+  &-tech
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 380px
+    margin: 55px 0
+.second-main
+  flex-wrap: wrap
+  justify-content: flex-start
+.second-item-title_dark, .second-item-val_dark
+  color: $dark
+.label_light
+  color: #868686
+  top: 0
+.seventh
+  z-index: 2
+  &-item
+    color: #afaeae
+    font-family: "MuseoSansCyrl-500"
+    font-size: 14px
+    line-height: 24px
+    margin: 12px 0
+    padding-left: 25px
+    position: relative
+    &:before
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      content: ''
+      width: 4px
+      height: 4px
+      background-color: rgba(175, 174, 174, 0.4)
+      border-radius: 50%
+  &-list
+    margin: 35px 0 30px
+.seventh_visit
+  padding: 130px 0 130px
+.visit
+  position: relative
+  &-list
+    display: flex
+    justify-content: space-between
+  &-item
+    width: 200px
+    text-align: center
+    &-title
+      color: #ffffff
+      font-family: "MuseoSansCyrl-700"
+      font-size: 18px
+      line-height: 24px
+      margin-top: 15px
+    &-text
+      color: #afaeae
+      font-family: "MuseoSansCyrl-500"
+      font-size: 14px
+      line-height: 16px
+      margin-top: 10px
+  &-animate
+    position: fixed
+    &-item
+      position: absolute
+      transform: translate(0, 0)
+      transition: all 0.5s cubic-bezier(.16,.51,.82,.58)
+    &_first
+      top: 15px
+      right: 9%
+  &-square
+    &_first
+      width: 470px
+      height: 470px
+      right: 0
+      top: 120px
+      &-content
+        background: #BD3C99
+        display: block
+        width: 100%
+        height: 100%
+        border-radius: 60px
+        transform: rotate(-8deg)
+        transform-origin: 50% 0
+    &_second
+      width: 160px
+      height: 160px
+      right: 85px
+      top: -30px
+      &-content
+        background: #66bb46
+        display: block
+        width: 100%
+        height: 100%
+        border-radius: 20px
+        transform: rotate(10deg)
+        transform-origin: 100% 0
+    &_third
+      width: 305px
+      height: 305px
+      right: 270px
+      top: -15px
+      &-content
+        background: #4b2d83
+        display: block
+        width: 100%
+        height: 100%
+        border-radius: 40px
+        transform: rotate(13deg)
+        transform-origin: 100% 0
+  &-puzzle
+    &_first
+      top: -66px
+      right: 347px
+    &_second
+      right: 25px
+      top: 195px
+      z-index: 1
+    &_third
+      right: 145px
+      top: -15px
+  &-rectangle
+    &_first
+      width: 745px
+      height: 220px
+      border-radius: 20px
+      top: -45px
+      right: 64px
+      &-content
+        width: 100%
+        height: 100%
+        background: #66bb46
+        transform: rotate(112deg)
+        border-radius: 10px
+    &_second
+      width: 560px
+      height: 220px
+      border-radius: 20px
+      top: 225px
+      right: -80px
+      &-content
+        width: 100%
+        height: 100%
+        background: #e90e47
+        transform: rotate(127deg)
+        border-radius: 10px
+    &_third
+      width: 280px
+      height: 24px
+      top: 370px
+      right: 380px
+      &-content
+        width: 100%
+        height: 100%
+        background: #4b2d83
+        transform: rotate(114deg)
+        border-radius: 10px
+        transform-origin: 100% 0%
+    &_fourth
+      width: 390px
+      height: 290px
+      top: 55px
+      right: 307px
+      &-content
+        background: #199bdb
+        transform: rotate(62deg)
+        width: 100%
+        height: 100%
+        border-radius: 20px
+        transform-origin: 50% 40%
+    &_fifth
+      width: 390px
+      height: 290px
+      top: 50px
+      right: 90px
+      &-content
+        background: #4b2d83
+        transform: rotate(123deg)
+        width: 100%
+        height: 100%
+        border-radius: 20px
+        transform-origin: 55% 50%
+
+
+  &-circle
+    &_big
+      width: 560px
+      height: 560px
+      background-color: #199bdb
+      border-radius: 50%
+      top: -35px
+      right: 110px
+      transform-origin: left center
+    &_sm
+      top: 100px
+      width: 336px
+      height: 336px
+      background-color: #ffd800
+      border-radius: 50%
+      right: 0
+      transform-origin: left center
+    &_third
+      width: 170px
+      height: 170px
+      border-radius: 50%
+      background: #bc3c99
+      top: 325px
+      right: 355px
+    &_fourth
+      width: 170px
+      height: 170px
+      border-radius: 50%
+      background: #e90e47
+      top: 365px
+      right: 238px
+  &-triangle
+    position: absolute
+    &_first
+      top: -40px
+      right: 470px
+      &-img
+        width: 273px
+    &_second
+      top: 45px
+      right: -40px
+    &_third
+      top: 125px
+      right: 80px
+
+.third-nav
+  position: absolute
+  top: 17px
+  left: 0
+  &-item
+    margin-bottom: 15px
+  &-link
+    color: rgba(255, 255, 255, 0.5)
+    font-family: "MuseoSansCyrl-700"
+    font-size: 16px
+    text-decoration: none
+    display: inline-block
+    transition: all .5s ease
+    position: relative
+    &:after
+      position: absolute
+      content: ''
+      width: 0
+      height: 2px
+      background-color: #ffffff
+      left: calc(100% + 12px)
+      top: 50%
+      transform: translateY(-50%)
+      transition: width .5s ease
+    &.active, &:hover
+      color: #ffffff
+      &:after
+        width: 20px
+
+@keyframes down-animation
+  0%
+    opacity: 0
+    transform: translateY(-70px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+.down-animation
+  animation-name: down-animation
+.seventh-circle
+  position: absolute
+  &_first
+    width: 350px
+    height: 350px
+    border-radius: 50%
+    background: #ffd800
+    top: 15px
+    left: -100px
+    transition: all 1s ease
+  &_second
+    width: 158px
+    height: 158px
+    background-color: #199bdb
+    border-radius: 50%
+    top: 230px
+    left: 45px
+    transition: all 1.3s ease
+  &_third
+    width: 367px
+    height: 367px
+    background-color: #199bdb
+    right: -60px
+    border-radius: 50%
+    top: 600px
+    transition: all 1s ease
+  &_fourth
+    width: 150px
+    height: 150px
+    background-color: #ffd800
+    border-radius: 50%
+    right: 130px
+    top: 925px
+    transition: all 1.3s ease
+  &_fifth
+    width: 186px
+    height: 186px
+    background-color: #ffd800
+    border-radius: 50%
+    left: 75px
+    top: 1050px
+    transition: all 1s ease
+  &_sixth
+    width: 100px
+    height: 100px
+    background-color: #199bdb
+    left: 200px
+    top: 1400px
+    border-radius: 50%
+    transition: all 1.3s ease
+  &_seventh
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    background: #e90e47
+    top: 390px
+    left: 30px
+    transition: all 1.6s ease
+  &_eight
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    background: #bc3c99
+    top: 240px
+    left: 200px
+    transition: all 1.9s ease
+  &_ninth
+    background: #bc3c99
+    width: 68px
+    height: 68px
+    border-radius: 50%
+    top: 1130px
+    right: 240px
+    transition: all 1.9s ease
+  &_ten
+    background: #e90e47
+    width: 120px
+    height: 120px
+    border-radius: 50%
+    top: 730px
+    right: 20px
+    transition: all 1.6s ease
+  &_eleven
+    background: #e90e47
+    width: 125px
+    height: 125px
+    border-radius: 50%
+    top: 1410px
+    left: 100px
+    transition: all 1.6s ease
+    z-index: 2
+  &_twelve
+    background: #bc3c99
+    width: 70px
+    height: 70px
+    border-radius: 50%
+    top: 1420px
+    left: 250px
+    transition: all 1.6s ease
+    z-index: 2
+.seventh-triangle
+  position: absolute
+  &_first
+    top: -160px
+    left: 65px
+    transition: all 1s ease
+    &-img
+      width: 287px
+      height: 277px
+      transform: rotate(-35deg)
+  &_second
+    top: 85px
+    left: 20px
+    transition: all 1.3s ease
+    &-img
+      width: 289px
+      height: 317px
+      transform: rotate(-6deg)
+  &_third
+    top: 45px
+    left: -75px
+    transition: all 1.6s ease
+    &-img
+      width: 226px
+      height: 210px
+      transform: rotate(49deg)
+  &_fourth
+    top: 270px
+    right: -105px
+    transition: all 1s ease
+    &-img
+      width: 374px
+      height: 345px
+      transform: rotate(0deg)
+  &_fifth
+    top: 620px
+    right: 18px
+    transition: all 1.3s ease
+    &-img
+      width: 380px
+      height: 371px
+      transform: rotate(0deg)
+  &_sixth
+    top: 806px
+    right: 264px
+    transition: all 1.6s ease
+    &-img
+      width: 171px
+      height: 174px
+      transform: rotate(0deg)
+  &_seventh
+    top: 1000px
+    left: -13px
+    transition: all 1s ease
+    &-img
+      width: 232px
+      height: 223px
+      transform: rotate(63deg)
+  &_eight
+    top: 1442px
+    left: 78px
+    transition: all 1.3s ease
+    &-img
+      width: 188px
+      height: 171px
+      transform: rotate(-6deg)
+  &_ninth
+    top: 1190px
+    left: 100px
+    transition: all 1.6s ease
+    &-img
+      width: 168px
+      height: 178px
+      transform: rotate(62deg)
+.seventh-square
+  position: absolute
+  &_first
+    background: #4b2d83
+    width: 310px
+    height: 310px
+    border-radius: 30px
+    transform: rotate(-2deg)
+    left: -105px
+    top: -115px
+    transition: all 1s ease
+  &_second
+    background: #66bb46
+    width: 190px
+    height: 190px
+    border-radius: 20px
+    transform: rotate(15deg)
+    left: 110px
+    top: 230px
+    transition: all 1.3s ease
+  &_third
+    background: #bc3c99
+    width: 100px
+    height: 100px
+    border-radius: 10px
+    left: 130px
+    top: 515px
+    transform: rotate(60deg)
+    transition: all 1.6s ease
+  &_fourth
+    background: #bc3c99
+    width: 305px
+    height: 305px
+    border-radius: 35px
+    transform: rotate(-2deg)
+    top: 450px
+    right: 25px
+    transition: all 1s ease
+  &_fifth
+    background-color: #4b2d83
+    width: 190px
+    height: 190px
+    border-radius: 20px
+    transform: rotate(15deg)
+    top: 615px
+    right: 230px
+    transition: all 1.3s ease
+  &_sixth
+    background-color: #66bb46
+    width: 100px
+    height: 100px
+    border-radius: 10px
+    transform: rotate(10deg)
+    top: 720px
+    right: 150px
+    transition: all 1.6s ease
+  &_seventh
+    background-color: #66bb46
+    width: 190px
+    height: 190px
+    border-radius: 20px
+    top: 1070px
+    left: 40px
+    transform: rotate(-15deg)
+    transition: all 1s ease
+  &_eight
+    background-color: #bc3c99
+    width: 100px
+    height: 100px
+    border-radius: 10px
+    transform: rotate(10deg)
+    top: 1200px
+    left: 83px
+    transition: all 1.3s ease
+  &_ninth
+    background-color: #4b2d83
+    width: 210px
+    height: 210px
+    border-radius: 30px
+    top: 1310px
+    left: 117px
+    transform: rotate(5deg)
+    transition: all 1.6s ease
+.seventh-rectangle
+  position: absolute
+  &_first
+    background-color: #66bb46
+    width: 400px
+    height: 160px
+    transform: rotate(128deg)
+    border-radius: 10px
+    left: -107px
+    top: 117px
+    z-index: 1
+    transition: all 1s ease
+  &_second
+    background-color: #e90e47
+    width: 400px
+    height: 160px
+    transform: rotate(30deg)
+    border-radius: 10px
+    left: -94px
+    top: 137px
+    transition: all 1.3s ease
+  &_third
+    background: #4b2d83
+    width: 200px
+    height: 15px
+    border-radius: 10px
+    top: 334px
+    left: -4px
+    transform: rotate(22deg)
+    z-index: 2
+    transition: all 1.6s ease
+  &_fourth
+    background-color: #e90e47
+    width: 400px
+    height: 160px
+    transform: rotate(20deg)
+    border-radius: 10px
+    right: -50px
+    top: 587px
+    transition: all 1s ease
+  &_fifth
+    background-color: #66bb46
+    width: 400px
+    height: 160px
+    transform: rotate(-53deg)
+    border-radius: 10px
+    right: 10px
+    top: 790px
+    z-index: 1
+    transition: all 1.3s ease
+  &_sixth
+    background: #4b2d83
+    width: 200px
+    height: 15px
+    border-radius: 10px
+    top: 970px
+    right: 206px
+    transform: rotate(22deg)
+    z-index: 2
+    transition: all 1.6s ease
+  &_seventh
+    background-color: #e90e47
+    width: 280px
+    height: 110px
+    transform: rotate(28deg)
+    border-radius: 5px
+    left: 40px
+    top: 1290px
+    transition: all 1s ease
+  &_eight
+    background-color: #66bb46
+    width: 280px
+    height: 110px
+    transform: rotate(83deg)
+    border-radius: 5px
+    left: -10px
+    top: 1430px
+    transition: all 1.3s ease
+  &_ninth
+    background-color: #4b2d83
+    width: 140px
+    height: 10px
+    transform: rotate(20deg)
+    border-radius: 5px
+    left: 100px
+    top: 1670px
+    transition: all 1.6s ease
+  &_ten
+    background: #4b2d83
+    width: 200px
+    height: 270px
+    transform: rotate(32deg)
+    top: -50px
+    left: -50px
+    border-radius: 10px
+    transition: all 1s ease
+  &_eleventh
+    background: #199bdb
+    width: 200px
+    height: 270px
+    transform: rotate(8deg)
+    top: 200px
+    left: 85px
+    border-radius: 10px
+    transition: all 1.3s ease
+  &_twelve
+    background: #4b2d83
+    width: 320px
+    height: 240px
+    transform: rotate(8deg)
+    top: 470px
+    right: 50px
+    border-radius: 10px
+    transition: all 1s ease
+  &_thirteen
+    background: #199bdb
+    width: 240px
+    height: 320px
+    transform: rotate(20deg)
+    top: 650px
+    right: -10px
+    border-radius: 10px
+    transition: all 1.3s ease
+  &_fourteen
+    background: #4b2d83
+    width: 210px
+    height: 280px
+    transform: rotate(-13deg)
+    top: 880px
+    left: 10px
+    border-radius: 10px
+    transition: all 1s ease
+    z-index: 1
+  &_fifteen
+    background: #199bdb
+    width: 160px
+    height: 220px
+    transform: rotate(20deg)
+    top: 1360px
+    left: 100px
+    border-radius: 10px
+    transition: all 1.3s ease
+.seventh-puzzle
+  position: absolute
+  &_first
+    top: -170px
+    left: -85px
+    z-index: 2
+    transition: all 1s ease
+    &-img
+      width: 365px
+      height: 286px
+  &_second
+    top: 250px
+    left: 15px
+    z-index: 1
+    transition: all 1.6s ease
+    &-img
+      width: 182px
+      height: 174px
+  &_third
+    top: -73px
+    left: 63px
+    transition: all 1.3s ease
+    &-img
+      width: 275px
+      height: 350px
+      transform: rotate(26deg)
+  &_fourth
+    top: 370px
+    right: 95px
+    transition: all 1.3s ease
+    &-img
+      width: 190px
+      height: 245px
+      transform: rotate(140deg)
+  &_fifth
+    top: 315px
+    right: 30px
+    transition: all 1s ease
+    z-index: 1
+    &-img
+      width: 363px
+      height: 291px
+      transform: rotate(100deg)
+  &_sixth
+    top: 865px
+    right: -16px
+    transition: all 1.6s ease
+    &-img
+      width: 210px
+      height: 165px
+      transform: rotate(100deg)
+  &_seventh
+    top: 1070px
+    left: 20px
+    transition: all 1.3s ease
+    &-img
+      width: 213px
+      height: 207px
+      transform: rotate(-9deg)
+  &_eight
+    top: 870px
+    left: -80px
+    transition: all 1s ease
+    z-index: 1
+    &-img
+      width: 363px
+      height: 291px
+      transform: rotate(-37deg)
+  &_ninth
+    top: 1600px
+    left: 100px
+    transition: all 1.6s ease
+    &-img
+      width: 151px
+      height: 167px
+      transform: rotate(26deg)
+.fifth-title-span
+  display: inline-block
+  line-height: 61px
+.visit-item
+  &-img
+    width: 60px
+  &-block
+    height: 70px
+.info
+  background: #1a1a1a
+  padding-bottom: 130px
+  position: relative
+  z-index: 2
+.fourth
+  background: $dark
+.menu-item-link
+  transition: all .5s ease
+  position: relative
+  &:before
+    width: 100%
+    height: 2px
+    content: ''
+    position: absolute
+    bottom: -5px
+    left: 0
+    background-color: rgba(27, 27, 27, 0.7)
+    opacity: 0
+    transition: opacity .5s ease
+  &:hover, &.active
+    color: rgba(27, 27, 27, 0.7)
+    &:before
+      opacity: 1
+.first-main-lang
+  color: rgba(27, 27, 27, 0.7)
+  transition: all .5s ease
+  &:hover, &.active
+    color: #1b1b1b
+.fourth-right-title-span
+  display: inline-block
+@import "media" // Всегда в конце

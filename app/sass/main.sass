@@ -36,7 +36,7 @@
     padding: 150px 0 90px
   &-list
     display: flex
-    justify-content: space-between
+    justify-content: flex-start
     flex-wrap: wrap
   &-item
     width: 33.33%
@@ -128,6 +128,9 @@
   &_white
     background: #e6e6e6
     color: $dark
+  &_red
+    background: #e90e47
+    color: #ffffff
 .visit
   padding: 350px 0 60px
   overflow: hidden
@@ -210,6 +213,14 @@
     justify-content: space-between
     max-width: 380px
     margin: 55px 0
+  &-map
+    width: 100%
+    height: calc(100% + 50px)
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+
 .second-main
   flex-wrap: wrap
   justify-content: flex-start
@@ -264,6 +275,7 @@
       margin-top: 10px
   &-animate
     position: fixed
+    z-index: 0
     &-item
       position: absolute
       transform: translate(0, 0)
@@ -434,6 +446,7 @@
   position: absolute
   top: 17px
   left: 0
+  z-index: 2
   &-item
     margin-bottom: 15px
   &-link
@@ -982,4 +995,1282 @@
     color: #1b1b1b
 .fourth-right-title-span
   display: inline-block
+.third-nav-link_span:after, .third-nav-link_under:after
+  display: none
+.third-nav-link_span, .third-nav-link_under
+  color: #ffffff
+.third-nav-link_under
+  text-decoration: underline
+  font-family: "MuseoSansCyrl-900"
+.intro
+  .visit-tech
+    margin: 90px 0 0
+  &-uber
+    background: #1f1d1d
+    padding: 60px 0 210px
+    .intro-main-text
+      color: #ffffff
+  &-yellow
+    padding: 140px 0 90px
+  &-img
+    max-width: calc(100% + 30px)
+    margin-left: -15px
+    box-shadow: 0 40px 98px rgba(0, 0, 0, 0.25)
+    display: block
+    &_marg
+      margin-top: 110px
+  &-main
+    width: 700px
+    margin: 0 auto
+    position: relative
+    left: 35px
+    &-text
+      color: #ffffff
+      font-family: "MuseoSansCyrl-500"
+      font-size: 16px
+      line-height: 24px
+      &_black
+        color: #010101
+  &-euro
+    background-color: #30adeb
+    padding: 140px 0 90px
+    .label
+      color: #ffffff
+  &-colambus
+    background: #2a2a2a
+    padding: 150px 0 200px
+  &-deputat
+    background: #ffffff
+    padding: 145px 0 90px
+    .intro-main-text
+      color: #010101
+  &-geek
+    padding: 0
+    background: #13151c
+    margin-top: -110px
+    .label
+      color: #6e6e6e
+  &-english
+    background: #273555
+    padding: 160px 0 50px
+    .label
+      color: #ffffff
+  &-donum
+    background: #91c3e9
+    padding-bottom: 150px
+    .label
+      color: #ffffff
+  &-photo
+    padding: 140px 0 145px
+    .label
+      color: #6e6e6e
+  &-sevita
+    background: #f42538
+    padding: 150px 0 100px
+    .label
+      color: #ffffff
+.visit
+  &_uber
+    padding: 490px 0 140px
+    &-overlay
+      background: #1f1d1d url(../img/uber-bg.jpg) no-repeat top center
+      background-size: contain
+  &_yellow
+    background: #face07
+    padding: 495px 0 55px
+    &-overlay
+      background: #face07 url(../img/yellow-bg.jpg) no-repeat bottom center
+      background-size: contain
+    .third-nav-link
+      color: #1b1b1b
+  &_blog
+    padding: 490px 0 60px
+    min-height: 700px
+  &_post
+    padding: 250px 0 60px
+    background-color: #f07023
+    min-height: 700px
+    display: flex
+    align-items: flex-end
+    &-left
+      position: absolute
+      top: 0
+      left: 0
+  &_contacts
+    padding: 315px 0 150px
+    min-height: 100vh
+    .container
+      pointer-events: none
+    .third-nav-item
+      margin-bottom: 25px
+    .third-nav, .contact-btn
+      pointer-events: auto
+  &_euro
+    padding: 480px 0 55px
+    background: #58bae7
+    &-overlay
+      background: #58bae7 url(../img/euro-bg.png) no-repeat right bottom
+  &_city
+    padding: 470px 0 70px
+    background: #30adeb
+    &-overlay
+      background: #30adeb url(../img/city-bg.png) no-repeat right 9% top
+      background-size: contain
+  &_error
+    height: 100vh
+    padding: 280px 0 225px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  &_colambus
+    background: #2a2a2a
+    padding: 470px 0 60px
+    &-overlay
+      background: #2a2a2a url(../img/colambus-bg.jpg) no-repeat right top
+  &_deputat
+    background: #262626
+    padding: 395px 0 75px
+    .third-main
+      top: 20px
+    &-overlay
+      background: #262626 url(../img/deputat-bg.jpg) no-repeat right bottom
+      background-size: contain
+    .title_services
+      line-height: 72px
+    .services-link_intro
+      margin-top: 70px
+  &_geek
+    background: #13151c
+    padding: 480px 0 310px
+    &-overlay
+      background: #13151c url(../img/geek-bg.png) no-repeat top right
+    .title_services, .services-link_intro, .third-nav-link
+      color: #06d3fd
+    .services-link_intro
+      background: url(../img/arrow-down3.svg) no-repeat left center
+      background-size: 9px 6px
+  &_english
+    background: #273555
+    padding: 470px 0 50px
+    &-overlay
+      background: #273555 url(../img/english-bg.jpg) no-repeat right top
+  &_donum
+    background: #91c3e9
+    padding: 480px 0 200px
+    &-overlay
+      background: #91c3e9 url(../img/donum-bg.jpg) no-repeat top center
+      background-size: cover
+  &_photo
+    background: #7ac1d5
+    padding: 480px 0 60px
+    &-overlay
+      background: #7ac1d5 url(../img/photo-bg.jpg) no-repeat center bottom
+  &_eco
+    background: #8cbe4d
+    padding: 470px 0 65px
+    &-overlay
+      background: #8cbe4d url(../img/eco-bg.jpg) no-repeat bottom right
+  &_edea
+    background: #ffffff
+    &-overlay
+      background: #ffffff url(../img/edea-bg.jpg) no-repeat center bottom
+  &_sevita
+    background: #f42538
+    padding: 470px 0 60px
+    &-overlay
+      background: #f42538 url(../img/sevita-bg.jpg) no-repeat top center
+.services-link_intro
+  margin-top: 40px
+.uber
+  background: #1f1d1d
+  position: relative
+  z-index: 4
+  &-line
+    position: relative
+    overflow: hidden
+    &-block
+      display: flex
+      justify-content: center
+      padding: 225px 0 150px
+      align-items: flex-start
+    &-label
+      position: absolute
+      z-index: -1
+      top: 150px
+      left: 50%
+      transform: translateX(-40%)
+  &-center
+    &-img
+      max-width: calc(100% + 30px)
+      margin-left: -15px
+      box-shadow: 0 40px 98px rgba(0, 0, 0, 0.25)
+      margin-bottom: 105px
+  &-bottom
+    position: relative
+    padding: 200px 0 80px
+    overflow: hidden
+    &-flex
+      display: flex
+      justify-content: space-between
+      width: calc(100% + 30px)
+      margin-left: -15px
+    &-item
+      width: calc(33.33% - 33px)
+      font-size: 0
+    &-img
+      width: 100%
+      margin-bottom: 50px
+      box-shadow: 0 40px 98px rgba(0, 0, 0, 0.25)
+      border-radius: 3px
+    &-line
+      width: 100%
+      height: 600px
+      position: absolute
+      left: 0
+      bottom: 0
+      background: #ffffff
+    &-label
+      position: absolute
+      top: 50px
+      left: 50%
+      transform: translateX(-50%)
+  &-top
+    &-label
+      position: absolute
+      left: -165px
+      top: -45px
+      z-index: -1
+.sixth-item-intro
+  width: 50%
+  .sixth-link
+    padding-bottom: 48%
+.footer
+  background: #1a1a1a
+  position: relative
+  z-index: 4
+  padding: 13px 0
+  &-nav
+    &-list
+      display: flex
+      align-items: center
+      justify-content: center
+    &-link
+      color: #595959
+      font-family: "MuseoSansCyrl-500"
+      font-size: 10px
+      line-height: 23.91px
+      text-transform: uppercase
+      text-decoration: none
+      padding: 0 15px
+      border-right: 2px solid #272727
+      transition: color .5s ease
+      &:hover
+        color: #ffffff
+    &-item
+      &:last-child
+        .footer-nav-link
+          border-right: none
+.red-text
+  color: #df3732
+.third-nav-link_title
+  display: block
+  color: rgba(255, 255, 255, 0.6)
+  font-family: "MuseoSansCyrl-900"
+  font-size: 12px
+  text-transform: uppercase
+  margin-bottom: 10px
+.first-main-left_intro
+  top: calc(100% - 60px)
+  left: 60px
+.startLogo_white .first-main-lang
+  color: rgba(255, 255, 255, 0.7)
+.startLogo_white .first-main-lang:hover, .startLogo_white .first-main-lang.active
+  color: #ffffff
+.startLogo_white .lang-line:before
+  background: #ffffff
+.first-main-right_intro
+  top: calc(100% - 60px)
+  right: -100px
+  z-index: 3
+.visit-overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+.intro-main-text_text
+  color: #010101
+.third-main_big
+  width: 100%
+  left: 0
+  padding-left: 260px
+.blog
+  &-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+  &-item
+    width: 20%
+    position: relative
+    background: red
+    padding: 35px 40px
+    height: 480px
+    &-block
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      height: 100%
+    &-bottom
+      position: relative
+    &-day
+      color: #ffffff
+      font-family: "MuseoSansCyrl-900"
+      font-size: 48px
+      line-height: 48px
+    &-month
+      color: rgba(255, 255, 255, 0.5)
+      font-family: "MuseoSansCyrl-900"
+      font-size: 12px
+      text-transform: uppercase
+    &-title
+      color: #ffffff
+      font-family: "MuseoSansCyrl-900"
+      font-size: 30px
+      transition: all .3s ease
+      &:hover
+        .second-item-line:before
+          transform: translate3d(-205px, 0, 0)
+          transition: transform .5s
+    &-link
+      display: block
+      text-decoration: none
+      height: 100%
+    &:hover
+      .second-item-line:before
+        opacity: 1
+      .blog-item-title
+        padding-bottom: 25px
+  &-line
+    background: #1b1b1b
+    padding: 30px 0
+    &-block
+      padding-left: 260px
+    &-more
+      color: #ffffff
+      font-family: "MuseoSansCyrl-900"
+      font-size: 16px
+      position: relative
+      text-decoration: none
+      &:before
+        width: 44px
+        height: 2px
+        background-color: #ffffff
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: -50px
+        content: ''
+        transition: all 0.25s cubic-bezier(0.15, 0, 0, 1)
+      &:hover:before
+        right: -55px
+.blog-item-bottom:hover .second-item-line:before
+  -webkit-transform: translate3d(-205px, 0, 0)
+  transform: translate3d(-205px, 0, 0)
+  -webkit-transition: -webkit-transform .5s
+  transition: -webkit-transform .5s
+  -o-transition: transform .5s
+  transition: transform .5s
+  transition: transform .5s, -webkit-transform .5s
+.title_post
+  font-size: 60px
+  line-height: 1
+.color1
+  background-color: #3b65ca
+.color2
+  background: #f08d23
+.color3
+  background-color: #f07023
+.color4
+  background-color: #dc1d4f
+.color5
+  background-color: #4b2d83
+.color6
+  background-color: #1aa5e9
+.color7
+  background-color: #ed2f61
+.color8
+  background-color: #804fe4
+.color9
+  background-color: #66bb46
+.post-img
+  width: 100%
+  margin-top: 80px
+.seventh_post
+  .seventh-text
+    font-size: 16px
+    line-height: 1.5
+  .seventh-row
+    margin-top: 85px
+  .seventh-text
+    margin-top: 35px
+  .seventh-row_nomarg
+    margin-top: 0
+.post-list
+  margin-top: 40px
+  &-item
+    color: #ffffff
+    font-family: "MuseoSansCyrl-700"
+    font-size: 14px
+    padding: 7px 0 7px 35px
+    position: relative
+    &:before
+      width: 4px
+      height: 1px
+      background: #ffffff
+      position: absolute
+      content: ''
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+.post-text-lnk
+  color: #199bdb
+.contact
+  &-text
+    color: #ffffff
+    font-family: "MuseoSansCyrl-700"
+    font-size: 16px
+    margin-top: 15px
+    &-title
+     color: #bbbbbb
+  &-btn
+    margin-top: 30px
+  &-popup
+    width: 100%
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 10
+    background: #1b1b1b
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 0
+    pointer-events: none
+    transition: opacity .5s ease
+    &-write, &-calc
+      width: 100%
+      height: 100vh
+      position: fixed
+      top: 0
+      left: 0
+      z-index: 10
+      background: #1b1b1b
+      display: flex
+      align-items: center
+      justify-content: center
+      opacity: 0
+      pointer-events: none
+      transition: opacity .5s ease
+      &.active
+        opacity: 1
+        pointer-events: auto
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &-content
+      max-width: 700px
+      width: 100%
+      margin: 90px 80px 90px
+      display: none
+      &.active
+        display: block
+      &.thank
+        max-width: 320px
+    &-title
+      color: #ffffff
+      font-family: "MuseoSansCyrl-900"
+      font-size: 60px
+      margin-bottom: 35px
+    &-form
+      display: flex
+      flex-wrap: wrap
+    &-input
+      width: calc(50% - 30px)
+      color: #a5a5a5
+      font-size: 16px
+      font-family: "MuseoSansCyrl-900"
+      border: none
+      border-bottom: 2px solid rgba(181, 181, 181, 0.1)
+      background: transparent
+      outline: none
+      padding: 15px
+      &:nth-child(2)
+        margin-right: 60px
+    &-btn
+      width: calc(50% - 30px)
+      margin-top: 60px
+    &-thank
+      color: #199bdb
+      font-family: "MuseoSansCyrl-900"
+      font-size: 60px
+    &-smile
+      color: #e1d01c
+    &-subtitle
+      color: #bbbbbb
+      font-family: "MuseoSansCyrl-500"
+      font-size: 16px
+      margin-top: 10px
+  &-social
+    display: flex
+    align-items: center
+    margin: 10px 0 20px
+    &-link
+      margin-right: 20px
+    &-img
+      width: 20px
+.close-btn
+  cursor: pointer
+  margin-left: 20px
+  width: 24px
+  height: 14px
+  position: fixed
+  top: 48px
+  right: 60px
+  .menu-line
+    background: #ffffff
+.third-main-circle
+  position: absolute
+.contact-circle
+  width: 950px
+  background-color: rgba(27, 27, 27, 0.8)
+  position: absolute
+  height: 450px
+  border-radius: 50% / 50%
+  z-index: -1
+  left: -185px
+  top: -80px
+.close-btn.active .menu-line_top
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+  top: 6px
+.close-btn.active .menu-line_bottom
+  -webkit-transform: rotate(-45deg)
+  -ms-transform: rotate(-45deg)
+  transform: rotate(-45deg)
+  bottom: 6px
+.gm-fullscreen-control
+  display: none
+#markerLayer>:not(:nth-child(1))
+  background: #ffd800
+  width: 10px!important
+  height: 10px!important
+  border-radius: 50%
+  margin-top: 20px
+  margin-left: 10px
+  overflow: visible!important
+  z-index: 1
+
+#markerLayer>:not(:nth-child(1)):before
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background: #199bdb
+  position: absolute
+  content: ''
+  top: 0
+  left: 0
+  -webkit-animation: scaleMarker 2s infinite
+  animation: scaleMarker 2s infinite
+  -webkit-transform-origin: center
+  -ms-transform-origin: center
+  transform-origin: center
+  z-index: -1
+
+@keyframes scaleMarker
+  0%
+    background: #ffd800
+    opacity: 1
+    -webkit-transform: scale(0)
+    transform: scale(0)
+  50%
+    background: #199bdb
+  100%
+    background: #199bdb
+    opacity: 0
+    -webkit-transform: scale(5)
+    transform: scale(5)
+.first-main-left_contact
+  top: calc(100% - 50px)
+  left: 60px
+.gm-bundled-control
+  bottom: 132px!important
+.fifth-btn_mobile
+  display: none
+.seventh_post
+  .post-item
+    color: #ffffff
+    font-family: "MuseoSansCyrl-700"
+    font-size: 14px
+    padding: 7px 0 7px 35px
+    position: relative
+    &:before
+      width: 4px
+      height: 1px
+      background: #ffffff
+      position: absolute
+      content: ''
+      left: 0
+      top: 50%
+      -webkit-transform: translateY(-50%)
+      transform: translateY(-50%)
+.archive
+  .menu-item-link:hover, .menu-item-link.active
+    color: #ffffff
+  .menu-item-link:before
+    background-color: #ffffff
+.yellow
+  background: #2c2c2c
+  padding: 110px 0 80px
+  &-top
+    padding-bottom: 140px
+    position: relative
+    &-first
+      height: 310px
+      background-color: #ffd401
+      position: absolute
+      top: 265px
+      left: 0
+      width: 100%
+    &-second
+      height: 465px
+      background-color: #ffd401
+      position: absolute
+      top: 1040px
+      left: 0
+      width: 50%
+    &-third
+      height: 460px
+      background-color: #f5f5f5
+      position: absolute
+      bottom: 205px
+      right: 0
+      width: 50%
+  &-center
+    padding: 130px 0
+    background-color: #ffd402
+  &-bottom
+    padding-top: 110px
+.euro
+  padding: 110px 0 80px
+  background: #58bae7
+  &-top
+    position: relative
+    &-first
+      background: url(../img/euro-bg2.jpg) no-repeat bottom center
+      height: 688px
+      position: absolute
+      top: -110px
+      left: 0
+      width: 100%
+      background-size: cover
+    &-second
+      background: #69819c
+      height: 940px
+      position: absolute
+      top: 1380px
+      left: 0
+      width: 100%
+  &-center
+    background: #69819c
+    padding-bottom: 240px
+  &-bottom
+    margin-top: -105px
+.city
+  background-color: #30adeb
+  &-top
+    padding: 110px 0 130px
+    position: relative
+    .container
+      max-width: 1590px
+    &-flex
+      display: flex
+      justify-content: space-between
+    &-item
+      &:first-child
+        width: 1180px
+        margin-right: 50px
+      &:last-child
+        width: 360px
+      .intro-img
+        margin-left: 0
+        width: 100%
+    &-first
+      position: absolute
+      top: 0
+      right: 0
+      background: #ffffff
+      width: calc(50% - 32px)
+      height: 818px
+    &-second
+      position: absolute
+      left: 0
+      top: 1828px
+      background: #ffffff
+      width: 50%
+      height: 905px
+    &-third
+      position: absolute
+      width: 43%
+      height: 1278px
+      background: #ffffff
+      bottom: 0
+      right: 0
+.error
+  position: relative
+  &-text
+    color: #bbbbbb
+    font-family: "MuseoSansCyrl-700"
+    font-size: 16px
+    text-align: center
+    margin-top: 40px
+  &-block
+    margin: 0 auto
+    width: 840px
+    height: 335px
+    -webkit-mask: url(../img/error.svg)
+    mask: url(../img/error.svg)
+    -webkit-mask-size: 845px
+    mask-size: 845px
+    .mask-circle1
+      top: -110px
+      left: 167px
+      &_b
+        top: -30px
+        left: 630px
+    .mask-circle2
+      top: -90px
+      left: 410px
+      &_b
+        top: -10px
+        left: 876px
+    .mask-circle3
+      top: -137px
+      left: 266px
+      &_b
+        top: -57px
+        left: 730px
+    .mask-circle4
+      top: 10px
+      left: 75px
+      &_b
+        top: 80px
+        left: 535px
+    .mask-circle17
+      top: -82px
+    .mask-circle5
+      top: -83px
+      left: 464px
+      &_b
+        top: -5px
+        left: 929px
+    .mask-circle6
+      top: 35px
+      left: 425px
+      &_b
+        top: 110px
+        left: 890px
+    .mask-circle7
+      top: -40px
+      left: 525px
+      &_b
+        top: 40px
+        left: 990px
+    .mask-circle8
+      top: 15px
+      left: 327px
+      &_b
+        top: 90px
+        left: 790px
+    .mask-circle9
+      top: 30px
+      left: 240px
+      &_b
+        top: 105px
+        left: 705px
+    .mask-circle18
+      top: 280px
+      left: 145px
+      &_b
+        top: 360px
+        left: 610px
+    .mask-circle10
+      top: 127px
+      left: 425px
+      &_b
+        top: 205px
+        left: 890px
+    .mask-circle11
+      left: 110px
+      top: 117px
+      &_b
+        left: 575px
+        top: 192px
+    .mask-circle12
+      left: 410px
+      top: 225px
+      &_b
+        left: 875px
+        top: 305px
+    .mask-circle13
+      left: 315px
+      top: 140px
+      &_b
+        left: 777px
+        top: 218px
+    .mask-circle14
+      left: 325px
+      top: 225px
+      &_b
+        left: 790px
+        top: 304px
+    .mask-circle15
+      left: 220px
+      top: 185px
+      &_b
+        left: 687px
+        top: 267px
+    .mask-circle16
+      left: 168px
+      top: 232px
+      &_b
+        left: 639px
+        top: 310px
+.third-main_error
+  width: 100%
+  left: 0
+.fancybox-slide--image
+  padding: 0!important
+.fancybox-button--close
+  border-radius: 50%
+  right: 30px
+  top: 30px
+.fancybox-navigation
+  display: none
+.gallery
+  padding: 30px 30px 0
+  display: none
+  &-item
+    width: calc(50% - 15px)
+    margin-bottom: 30px
+    z-index: 4
+  &-img
+    width: 100%
+  &_uber
+    background: #1f1d1d
+  &_yellow
+    background-color: #2c2c2c
+  &_euro
+    background: #58bae7
+  &_city
+    background: #30adeb
+  &_colambus
+    background: #2a2a2a
+  &_deputat
+    background: #262626
+  &_geek
+    background: #13151c
+  &_english
+    background: #273555
+  &_donum
+    background: #91c3e9
+  &_photo
+    background: #76c1d6
+.colambus
+  background: #2a2a2a
+  &-center
+    padding: 110px 0 20px
+  &-bottom
+    position: relative
+    &-label
+      position: absolute
+      top: 60px
+      left: -120px
+      z-index: -1
+  &-top
+    position: relative
+    &-label
+      position: absolute
+      top: 580px
+      left: -120px
+      z-index: -1
+      &_second
+        top: calc(100% - 610px)
+    &-first
+      height: 1186px
+      background-color: #d02223
+      width: 100%
+      position: absolute
+      left: 0
+      top: 590px
+    &-second
+      height: 1167px
+      background-color: #d02223
+      width: 100%
+      position: absolute
+      left: 0
+      bottom: -577px
+  &-center
+    position: relative
+    &-first
+      height: 1167px
+      background-color: #d02223
+      position: absolute
+      width: 100%
+      left: 0
+      top: 2540px
+    &-label
+      position: absolute
+      top: 2795px
+      left: -120px
+      z-index: -1
+.deputat
+  padding: 100px 0 0
+  background: #efefef
+  &-top
+    background-color: #efefef
+    padding-bottom: 110px
+    position: relative
+    &-first
+      height: 716px
+      position: absolute
+      left: 0
+      top: -110px
+      background-color: #302e2d
+      width: 100%
+      &:before
+        width: 50%
+        position: absolute
+        right: 0
+        bottom: 0
+        height: 186px
+        content: ''
+        background-color: #597bd1
+    &-second
+      height: 631px
+      background-color: #597bd1
+      position: absolute
+      z-index: -1
+      right: calc(100% - 227px)
+      bottom: -517px
+      width: 31.875vw
+  &-center
+    position: relative
+    background: #efefef
+    &-first
+      height: 565px
+      background-color: #597bd1
+      position: absolute
+      right: 0
+      top: 112px
+      width: 50%
+    &-second
+      height: 567px
+      background-color: #e3e3e3
+      width: 50%
+      left: 0
+      top: 870px
+      position: absolute
+    &-third
+      height: 567px
+      background-color: #e3e3e3
+      right: 0
+      width: 50%
+      position: absolute
+      top: 1621px
+    &-fourth
+      height: 567px
+      background-color: #e3e3e3
+      left: 0
+      width: 50%
+      position: absolute
+      bottom: 119px
+    &-fifth
+      height: 716px
+      background-color: #597bd1
+      top: calc(100% - 120px)
+      width: 100%
+      position: absolute
+      z-index: 1
+    &-sixth
+      height: 632px
+      background-color: #597bd1
+      top: calc(100% - 115px)
+      width: 100%
+      position: absolute
+      z-index: 1
+  &-bottom
+    background: #262626
+    padding-top: 185px
+    margin-top: -55px
+    position: relative
+.geek
+  background: #13151c
+  padding-bottom: 80px
+  overflow: hidden
+  margin-top: -230px
+  &-top
+    padding: 555px 0 0
+    position: relative
+    &-first
+      position: absolute
+      width: 1472px
+      height: 1402px
+      background: url(../img/geek-bg2.png) no-repeat center
+      left: 0
+      top: -554px
+      z-index: -1
+    &-second
+      width: 1267px
+      height: 1522px
+      position: absolute
+      background: url(../img/geek-bg3.png) no-repeat center
+      z-index: -1
+      left: -515px
+      top: 140px
+    &-third
+      width: 1446px
+      height: 1555px
+      position: absolute
+      background: url(../img/geek-bg3.png) no-repeat center
+      z-index: -1
+      left: 0
+      top: calc(100% - 900px)
+  &-center
+    padding: 110px 0 0
+    position: relative
+    &-first
+      position: absolute
+      z-index: -1
+      left: -200px
+      width: 1920px
+      height: 2000px
+      bottom: -1000px
+      background: url(../img/geek-bg4.png) no-repeat center
+    &-second
+      position: absolute
+      width: 1267px
+      height: 1453px
+      background: url(../img/geek-bg5.png) no-repeat center
+      left: -620px
+      top: 870px
+      z-index: -1
+    &-third
+      position: absolute
+      width: 1267px
+      height: 1453px
+      background: url(../img/geek-bg5.png) no-repeat center
+      right: -495px
+      top: 1975px
+      z-index: -1
+    &-fourth
+      position: absolute
+      width: 1267px
+      height: 1453px
+      background: url(../img/geek-bg5.png) no-repeat center
+      left: -620px
+      bottom: 0
+      z-index: -1
+  &-bottom
+    padding-top: 150px
+    position: relative
+    &-first
+      position: absolute
+      width: 1916px
+      height: 1724px
+      background: url(../img/geek-bg6.png) no-repeat center
+      z-index: -1
+      top: 0
+      left: 0
+    &-second
+      position: absolute
+      width: 1804px
+      height: 2110px
+      background: url(../img/geek-bg7.png) no-repeat center
+      z-index: -1
+      bottom: 0
+      left: -330px
+.english
+  background: #273555
+  padding: 205px 0 0
+  &-center
+    padding: 110px 0 130px
+    position: relative
+    &-first
+      background: #1c2435
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 1140px
+      position: absolute
+  &-top
+    position: relative
+    &-first
+      height: 2550px
+      width: 100%
+      left: 0
+      bottom: 220px
+      background: #1c2435 url(../img/english-bg2.png) no-repeat center bottom
+      background-size: contain
+      position: absolute
+  &-bottom
+    background: #1c2435
+    padding-bottom: 80px
+.donum
+  background: #91c3e9
+  padding-bottom: 80px
+  &-top
+    padding-top: 285px
+    position: relative
+    overflow: hidden
+    &-first
+      position: absolute
+      width: 1406px
+      height: 343px
+      top: 75px
+      left: calc(50% - 703px)
+      background: url(../img/donum4.png) no-repeat center
+    img
+      margin-bottom: 100px
+.photo
+  background: #1b2f3e
+  &-top
+    padding-top: 110px
+    position: relative
+    &-first
+      width: 100%
+      position: absolute
+      left: 0
+      top: 0
+      height: 769px
+      background: #7ac1d5
+    &-second
+      width: 100%
+      position: absolute
+      left: 0
+      top: calc(100% - 359px)
+      height: 2921px
+      background: #7ac1d5
+  &-center
+    padding-top: 110px
+  &-bottom
+    padding: 110px 0 80px
+.eco
+  background: #23211f
+  &-top
+    position: relative
+    padding-top: 110px
+    &-first
+      position: absolute
+      height: 670px
+      top: -110px
+      right: 321px
+      background: #8cbe4d
+      width: 100%
+      z-index: -1
+    &-second
+      position: absolute
+      right: 0
+      width: 50%
+      height: 1077px
+      top: 670px
+      background: #8cbe4d
+    &-third
+      position: absolute
+      left: 0
+      width: 50%
+      height: 1180px
+      top: 2595px
+      background: #8cbe4d
+    &-fourth
+      position: absolute
+      right: 0
+      width: 50%
+      height: 1230px
+      bottom: 1695px
+      background: #8cbe4d
+    &-fifth
+      position: absolute
+      left: 0
+      width: 37%
+      height: 1553px
+      top: calc(100% - 906px)
+      background: #8cbe4d
+  &-center
+    padding: 110px 0 0
+  &-bottom
+    background: #ece9e4
+    padding: 215px 0 80px
+    margin-top: -85px
+.about
+  background: #1b1b1b
+  padding: 200px 0 50px
+  &-container
+    max-width: 1460px
+  &-title
+    color: #ffffff
+    font-family: "MuseoSansCyrl-900"
+    font-size: 60px
+    text-align: center
+    max-width: 865px
+    margin: 0 auto
+    padding: 0 30px
+  &-text
+    margin: 40px auto 0
+    text-align: center
+    color: #ffffff
+    font-family: "MuseoSansCyrl-500"
+    font-size: 16px
+    line-height: 1.5
+    max-width: 695px
+    padding: 0 30px
+  &-list
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-top: 100px
+  &-item
+    width: calc(25% - 60px)
+    margin: 50px 30px
+    position: relative
+  &-img
+    width: 100%
+  &-info
+    color: #ffffff
+    position: absolute
+    font-family: "MuseoSansCyrl-900"
+    left: 0
+    bottom: 50px
+    &-title
+      font-size: 20px
+    &-position
+      font-size: 12px
+      text-transform: uppercase
+      margin-top: 8px
+.contact-popup-form form
+  display: flex
+  flex-wrap: wrap
+.header-left_popup
+  position: absolute
+  left: 60px
+  top: 40px
+  .header-logo
+    display: block!important
+  use
+    fill: #ffffff
+  .header-phone-link
+    color: #ffffff
 @import "media" // Всегда в конце

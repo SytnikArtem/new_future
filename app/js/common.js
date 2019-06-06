@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    //Скрипт для удаления скролл
+    //РЎРєСЂРёРїС‚ РґР»СЏ СѓРґР°Р»РµРЅРёСЏ СЃРєСЂРѕР»Р»
 
     var $body = $(window.document.body);
     function bodyFreezeScroll() {
@@ -11,53 +11,33 @@ $(document).ready(function() {
         $body.css({'overflow': 'auto', 'position': 'relative'});
     }
 
-    //Инициализация wow.js
+    //РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ wow.js
 
   var wow = new WOW(
     {
-      boxClass:     'wow',      // класс, скрывающий элемент до момента отображения на экране (по умолчанию, wow)
-      animateClass: 'animated', // класс для анимации элемента (по умолчанию, animated)
-      offset:       200,          // расстояние в пикселях от нижнего края браузера до верхней границы элемента, необходимое для начала анимации (по умолчанию, 0)
-      mobile:       false,       // включение/отключение WOW.js на мобильных устройствах (по умолчанию, включено)
-      live:         true,       // поддержка асинхронно загруженных элементов (по умолчанию, включена)
-      scrollContainer: null, // селектор прокручивающегося контейнера (опционально, по умолчанию, window)
+      boxClass:     'wow',      // РєР»Р°СЃСЃ, СЃРєСЂС‹РІР°СЋС‰РёР№ СЌР»РµРјРµРЅС‚ РґРѕ РјРѕРјРµРЅС‚Р° РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РЅР° СЌРєСЂР°РЅРµ (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, wow)
+      animateClass: 'animated', // РєР»Р°СЃСЃ РґР»СЏ Р°РЅРёРјР°С†РёРё СЌР»РµРјРµРЅС‚Р° (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, animated)
+      offset:       0,          // СЂР°СЃСЃС‚РѕСЏРЅРёРµ РІ РїРёРєСЃРµР»СЏС… РѕС‚ РЅРёР¶РЅРµРіРѕ РєСЂР°СЏ Р±СЂР°СѓР·РµСЂР° РґРѕ РІРµСЂС…РЅРµР№ РіСЂР°РЅРёС†С‹ СЌР»РµРјРµРЅС‚Р°, РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РЅР°С‡Р°Р»Р° Р°РЅРёРјР°С†РёРё (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, 0)
+      mobile:       false,       // РІРєР»СЋС‡РµРЅРёРµ/РѕС‚РєР»СЋС‡РµРЅРёРµ WOW.js РЅР° РјРѕР±РёР»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІР°С… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, РІРєР»СЋС‡РµРЅРѕ)
+      live:         true,       // РїРѕРґРґРµСЂР¶РєР° Р°СЃРёРЅС…СЂРѕРЅРЅРѕ Р·Р°РіСЂСѓР¶РµРЅРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, РІРєР»СЋС‡РµРЅР°)
+      scrollContainer: null, // СЃРµР»РµРєС‚РѕСЂ РїСЂРѕРєСЂСѓС‡РёРІР°СЋС‰РµРіРѕСЃСЏ РєРѕРЅС‚РµР№РЅРµСЂР° (РѕРїС†РёРѕРЅР°Р»СЊРЅРѕ, РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, window)
       resetAnimation: true
     }
   );
   wow.init();
 
-  // Плавный скрол "Покрутить вниз"
+  // РџР»Р°РІРЅС‹Р№ СЃРєСЂРѕР» "РџРѕРєСЂСѓС‚РёС‚СЊ РІРЅРёР·"
 
     $(".scroll-link").click(function (event) {
-        console.log('aaa');
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
 
-    // Функция трансформа лого (пока не готовая)
+    // Р¤СѓРЅРєС†РёСЏ С‚СЂР°РЅСЃС„РѕСЂРјР° Р»РѕРіРѕ (РїРѕРєР° РЅРµ РіРѕС‚РѕРІР°СЏ)
 
-  function logoTransform(){
-    let logo = $('.first-main-img');
-    let phone = $('.header-phone');
-    let topPosition = logo.offset().top + 60;
-    let thisPosition = $(window).scrollTop();
-    if (topPosition <= thisPosition) {
-      $('.header-logo').addClass('active');
-      $('.header-phone').addClass('active');
-    }
-    else {
-      $('.header-logo').removeClass('active');
-      $('.header-phone').removeClass('active');
-    }
-  }
-  // logoTransform();
-  // $(window).scroll(function () {
-  //   logoTransform();
-  // });
-
-    //Меню на мобильном
+    //РњРµРЅСЋ РЅР° РјРѕР±РёР»СЊРЅРѕРј
 
   $('.menu-btn').click(function(){
      $(this).toggleClass('active');
@@ -73,38 +53,7 @@ $(document).ready(function() {
      }
 
   });
-  // function randomInteger(min, max) {
-  //   let rand = min - 0.5 + Math.random() * (max - min + 1)
-  //   rand = Math.round(rand);
-  //   return rand;
-  // }
-  // function changeColor(){
-  //     let colors = ['#66bb46', '#ffd800', '#e90e47', '#30a275', '#199bdb', '#4b2d83', '#c0327e', '#199bdb', '#ffd800', '#ce0814', '#bc3c99', '#192b85', '#66bb46', '#e90e47', '#30a275', '#4b2d83', '#c0327e', '#ce0814'];
-  //     let numberColor = colors.length - 1;
-  //     let circle = $('.mask-circle');
-  //     setInterval(function(){
-  //       for (i = 0; i < numberColor; i++) {
-  //         let randomNumber = randomInteger(1, numberColor);
-  //         circle.eq(i).css('background-color', colors[randomNumber]);
-  //       }
-  //     }, 5000)
-  // }
-  // changeColor();
-  function logoSwitch () {
-    $('.altLogo').each(function() {
-      let height = $('.altLogo').width();
-      $(this).css('top',
-        $('.startLogo').offset().top - $(this).closest('.row').offset().top + height
-      );
-    });
-    $('.altLogo2.header').each(function() {
-      $(this).css('top',
-        $('.startLogo2').offset().top - $(this).closest('.row').offset().top
-      );
-    });
-  };
-  // $(document).scroll(function() {logoSwitch();});
-  // logoSwitch();
+
   $('.first-main-lang.active').hover(
 
     function(){
@@ -125,16 +74,7 @@ $(document).ready(function() {
     }
   );
 
-  //Скрытие меню после 2сек
-
-  if($(window).width() > 992) {
-      setTimeout(function(){
-          $('.menu-list').removeClass('active');
-          $('.menu-btn').removeClass('active');
-      }, 2000);
-  }
-
-  //Паралакс для кругов
+  //РџР°СЂР°Р»Р°РєСЃ РґР»СЏ РєСЂСѓРіРѕРІ
 
     function parallaxBlock() {
         var parallaxController = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "500%" } });
@@ -148,7 +88,7 @@ $(document).ready(function() {
     }
     parallaxBlock();
 
-   //Фиксация блока на странице services-item
+   //Р¤РёРєСЃР°С†РёСЏ Р±Р»РѕРєР° РЅР° СЃС‚СЂР°РЅРёС†Рµ services-item
     if($(window).width() > 992) {
         var controller = new ScrollMagic.Controller({
             globalSceneOptions: {
@@ -164,7 +104,74 @@ $(document).ready(function() {
             offset: '-20px'
         }).setPin('.visit-right', {pushFollowers: false}).addTo(controller);
     }
+    $('.contact-btn').click(function(e){
+        e.preventDefault();
+        bodyFreezeScroll();
+        $('.contact-popup').addClass('active');
+        $('.close-btn').addClass('active');
+        $('.contact-popup-content').eq(0).addClass('active');
+    });
+    $('.contact-popup-form').submit(function(e){
+        e.preventDefault();
+        $('.thank').addClass('active').prev().removeClass('active');
+    });
+    $('.close-btn').click(function(){
+        $(this).removeClass('active');
+        $('.contact-popup, .contact-popup-write, .contact-popup-calc').removeClass('active');
+        setTimeout(function(){
+            $('.thank').removeClass('active').prev().addClass('active');
+        }, 1000);
+        bodyUnfreezeScroll();
+    });
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+            // "zoom",
+            //"share",
+            // "slideShow",
+            //"fullScreen",
+            //"download",
+            // "thumbs",
+            "close"],
+        infobar: false,
+        gutter: 0
+    });
+    $('.gallery-main').masonry({
+        // options
+        itemSelector: '.gallery-item',
+        gutter: 30,
+        percentPosition: true
+    });
+
+    $('.gallery-main').imagesLoaded().progress( function() {
+        $('.gallery-main').masonry();
+    });
+    $('.fifth-form').submit(function(){
+        $('.contact-popup-write').addClass('active');
+        $('.contact-popup-write .thank-write').addClass('active');
+        $('.close-btn').addClass('active');
+    });
 });
+
+function checkMenu(){
+    if($(window).width() > 992) {
+        setTimeout(function(){
+            $('.menu-list').removeClass('active');
+            $('.menu-btn').removeClass('active');
+        }, 2000);
+    }
+}
+var blockIsActive = localStorage.getItem("blockIsActive");
+
+$('.menu-btn').click(function(){
+    localStorage.setItem("blockIsActive", true);
+});
+if(blockIsActive !== "true") {
+    console.log(blockIsActive);
+    checkMenu();
+}
+
+
+
 if($('.visit-animate_left').length > 0) {
     var leftPosition = $('.visit-animate_left').offset().left;
     var leftWidth = $('.visit-animate_left').width();
@@ -186,48 +193,15 @@ $(window).scroll(function () {
         var thisScroll = $(this).scrollTop();
         var paralaxScroll = thisScroll/20 + 'px';
 
-        console.log(rightPosition);
         if (thisScroll < 200) {
             $('.visit-animate_left').css({'transform': 'translate(0, ' + paralaxScroll + ')'});
             $('.visit-animate_top').css({'transform': 'translate(0, ' + paralaxScroll + ')'});
             $('.visit-animate_right').css({'transform': 'translate(0, ' + paralaxScroll + ')'});
         }
         else if(thisScroll > 200) {
-            console.log('aaa');
             $('.visit-animate_left').css({'transform': 'translate(' + leftAnimate + ', ' + paralaxScroll + ')'});
             $('.visit-animate_top').css({'transform': 'translate(0, ' + topAnimate + ')'});
             $('.visit-animate_right').css({'transform': 'translate(' + rightAnimate + ', ' + paralaxScroll + ')'});
         }
     }
-
-    // else if (thisScroll > secondStep && thisScroll < thirdStep) {
-    //     $('.visit-circle_big').css({'left': '0', 'z-index': '2', 'top': '14%', 'transform': 'translate(45px, ' + paralaxScroll + ') scale(0.28)'});
-    //     $('.visit-circle_sm').css({'right': '87%', 'top': '7%', 'transform': 'translate(0%, ' + paralaxScroll + ') scale(1.04)'});
-    // }
-    // else if (thisScroll > thirdStep && thisScroll < fourthStep) {
-    //     $('.visit-circle_big').css({'left': '0', 'z-index': '2', 'transform': 'translate(-100%, ' + paralaxScroll + ') scale(0.28)'});
-    //     $('.visit-circle_sm').css({'right': '0%', 'transform': 'translate(100%, ' + paralaxScroll + ') scale(1.04)'});
-    // }
-    // else if (thisScroll > fourthStep && thisScroll < fifthStep) {
-    //     $('.visit-circle_big').css({'left': '84%', 'z-index': '1', 'top': '-100px', 'transform': 'translate(0, ' + paralaxScroll + ') scale(0.66)'});
-    //     $('.visit-circle_sm').css({'right': '-3%', 'z-index': '2', 'top': '150px', 'transform': 'translate(0%, ' + paralaxScroll + ') scale(0.45)'});
-    // }
-    // else if (thisScroll > fifthStep && thisScroll < sixthStep) {
-    //     $('.visit-circle_big').css({'left': '0%', 'z-index': '1', 'top': '-100px', 'transform': 'translate(-100%, ' + paralaxScroll + ') scale(0.66)'});
-    //     $('.visit-circle_sm').css({'right': '0%', 'z-index': '2', 'top': '150px', 'transform': 'translate(100%, ' + paralaxScroll + ') scale(0.45)'});
-    // }
-    // else if (thisScroll > sixthStep) {
-    //     $('.visit-circle_big').css({'left': '10%', 'z-index': '1', 'top': '-100px', 'transform': 'translate(0, ' + paralaxScroll + ') scale(0.18)'});
-    //     $('.visit-circle_sm').css({'right': '80%', 'z-index': '2', 'top': '-120px', 'transform': 'translate(0, ' + paralaxScroll + ') scale(0.55)'});
-    // }
-    // var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onCenter", duration: blockHeight}});
-    // $('.parallax').each(function() {
-    //     var trigg = this.parentNode,
-    //         parallax = this.getAttribute('data-parallax'),
-    //         speed = parallax;
-    //     new ScrollMagic.Scene({triggerElement: trigg})
-    //         .setTween(this, {y: speed, ease: Linear.easeNone})
-    //         .addTo(controller);
-    // });
-
 });

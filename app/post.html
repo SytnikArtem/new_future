@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Your future</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=480, maximum-scale=1.0"/>
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body>
+	<div class="header header_white startLogo2">
+		<div class="header-top">
+			<div class="header-left">
+				<div class="header-logo">
+					<img src="img/logo2.svg" alt="" class="header-logo-img">
+				</div>
+				<div class="header-phone">
+					<a href="tel:+380(93)1112220" class="header-phone-link">+380 (93) 111 22 20</a>
+				</div>
+			</div>
+			<div class="header-menu menu">
+				<ul class="menu-list active">
+					<li class="menu-item">
+						<a href="" class="menu-item-link">Работы</a>
+					</li>
+					<li class="menu-item">
+						<a href="" class="menu-item-link">Услуги</a>
+					</li>
+					<li class="menu-item">
+						<a href="" class="menu-item-link">Поддержка</a>
+					</li>
+					<li class="menu-item">
+						<a href="" class="menu-item-link">О нас</a>
+					</li>
+					<li class="menu-item">
+						<a href="" class="menu-item-link">Блог</a>
+					</li>
+					<li class="menu-item">
+						<a href="" class="menu-item-link">Контакты</a>
+					</li>
+				</ul>
+				<div class="menu-btn active">
+					<span class="menu-line menu-line_top"></span>
+					<span class="menu-line menu-line_bottom"></span>
+				</div>
+			</div>
+			<div class="menu-overlay"></div>
+		</div>
+	</div>
+	<section class="third third_visit visit visit_post">
+		<div class="first-main-left first-main-left_intro startLogo startLogo_white">
+			<a href="http://future.youfuture.com.ua/" class="first-main-lang lang active">
+				<span class="lang-text">Рус.</span>
+				<span class="lang-line"></span>
+			</a>
+			<a href="http://future.youfuture.com.ua/uk/" class="first-main-lang lang">
+				<span class="lang-text">Укр.</span>
+				<span class="lang-line"></span>
+			</a>
+			<a href="http://future.youfuture.com.ua/en/" class="first-main-lang lang">
+				<span class="lang-text">Eng.</span>
+				<span class="lang-line"></span>
+			</a>
+		</div>
+		<div class="first-main-right first-main-right_intro startLogo startLogo_white">
+			<a href="" class="first-main-lang contact active">
+				<span class="lang-text">Написать Нам</span>
+				<span class="lang-line"></span>
+			</a>
+		</div>
+		<div class="container container_flex circle-trigger1">
+			<div class="visit_post-left">
+				<div class="blog-item-top">
+					<p class="blog-item-day">25</p>
+					<p class="blog-item-month">марта</p>
+				</div>
+			</div>
+			<div class="third-main third-main_big">
+				<h2 class="third-title title_white title_post wow up-animation" data-wow-delay=".1s">Как создать  «Новости сайта»  или «Блог» для  сайта на Drupal 7. Используем модуль Views</h2>
+				<a href="#blog" class="services-link services-link_intro services-link_white wow up-animation scroll-link" data-wow-delay=".2s">Читать статью</a>
+			</div>
+		</div>
+	</section>
+	<section class="section seventh row seventh_post" id="blog">
+		<div class="container">
+			<div class="seventh-row seventh-row_nomarg">
+				<p class="seventh-text wow up-animation" data-wow-delay="0.1s">Рано или поздно веб-разработчик столкнется с необходимостью добавить на свой сайт рубрику новостей или создать блог для заказчика. На просторах интернета не так много хороших и качественных готовых и еще и бесплатных блогов, а тем более готовых решений по выводу динамических новостей.
+					<a href="" class="post-text-lnk">На помощь пришел Друпал.</a> На его базе можно создать мощный и красивый блог или страницу «Новости сайта». Для этого в этом уроке мы будем создавать свой тип материала (так как не всегда подходит уже существующий «Запись в блоге» который предлагает Друпал, да и не лишним будет практика по созидания своего собственного типа материалов) и используем модуль Views. Для работы с изображениями используем модуль Colorbox.</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="seventh-row">
+				<h4 class="seventh-title wow up-animation" data-wow-delay="0.1s">Тип материала</h4>
+				<p class="seventh-text wow up-animation" data-wow-delay="0.2s">Для начала нам необходимо создать новый » Тип материала «. Переходим в структуру » Типы материалов » Добавить тип материала и создаем новый тип.
+					<br>Теперь необходимо указать поля, которые мы будем использовать. Для этого выбираем «Управление полями». По умолчанию Друпал создает такие базовые поля, как Заголовок и Тело новости:</p>
+			</div>
+		</div>
+		<div class="container">
+			<img src="img/uber-bg.jpg" alt="" class="post-img wow up-animation" data-wow-delay="0.1s">
+		</div>
+		<div class="container">
+			<div class="seventh-row">
+				<h4 class="seventh-title wow up-animation" data-wow-delay="0.1s">Добавляем новое поле</h4>
+				<p class="seventh-text wow up-animation" data-wow-delay="0.2s">Для того чтобы добавить новое поле, используем соответствующее окно. Мы добавим поле «Фотографии» для отдельной загрузки изображений в наши новости сайта / записи блога, указываем тип поля «Изображение», а виджет » Multiupload » (мульти загрузка файлов). По умолчанию Друпал добавляет по одному изображению, чтобы сделать мульти загрузки файлов используем модули Multiupload Filefield Widget и Multiupload Imagefield Widget. Сохраняемся и указываем настройки нашего поля, не забываем указать количество значений для поля как неограниченно!</p>
+				<ul class="post-list">
+					<li class="post-list-item wow up-animation" data-wow-delay="0.1s">Поле Заголовок — класс blogs_title</li>
+					<li class="post-list-item wow up-animation" data-wow-delay="0.1s">Поле Фотографии — класс blogs_photo</li>
+					<li class="post-list-item wow up-animation" data-wow-delay="0.1s">Поле Теги — класс blogs_tags</li>
+					<li class="post-list-item wow up-animation" data-wow-delay="0.1s">Поле Yandex.Share — класс blogs_share</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="seventh-row">
+				<h4 class="seventh-title wow up-animation" data-wow-delay="0.1s">Добавляем новое поле</h4>
+				<p class="seventh-text wow up-animation" data-wow-delay="0.2s">Для того чтобы добавить новое поле, используем соответствующее окно. Мы добавим поле «Фотографии» для отдельной загрузки изображений в наши новости сайта / записи блога, указываем тип поля «Изображение», а виджет » Multiupload » (мульти загрузка файлов). По умолчанию Друпал добавляет по одному изображению, чтобы сделать мульти загрузки файлов используем модули Multiupload Filefield Widget и Multiupload Imagefield Widget. Сохраняемся и указываем настройки нашего поля, не забываем указать количество значений для поля как неограниченно!</p>
+			</div>
+		</div>
+	</section>
+	<section class="sixth row">
+    <div class="sixth-flex">
+        <div class="sixth-item">
+            <a href="" class="sixth-link wow up-animation">
+					<span class="sixth-block">
+						<p class="sixth-text">Lorem ipsum dolor sit ame</p>
+						<h2 class="sixth-title">Работы</h2>
+					</span>
+            </a>
+        </div>
+        <div class="sixth-item wow up-animation" data-wow-delay=".1s">
+            <a href="" class="sixth-link">
+					<span class="sixth-block">
+						<p class="sixth-text">Lorem ipsum dolor sit ame</p>
+						<h2 class="sixth-title">Поддержка</h2>
+					</span>
+            </a>
+        </div>
+        <div class="sixth-item wow up-animation" data-wow-delay=".2s">
+            <a href="" class="sixth-link">
+					<span class="sixth-block">
+						<p class="sixth-text">Lorem ipsum dolor sit ame</p>
+						<h2 class="sixth-title">Контакты</h2>
+					</span>
+            </a>
+        </div>
+    </div>
+</section>
+	<footer class="footer">
+		<div class="container">
+			<nav class="footer-nav">
+				<ul class="footer-nav-list">
+					<li class="footer-nav-item">
+						<a href="" class="footer-nav-link">Главная</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="" class="footer-nav-link">страница</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="" class="footer-nav-link">текущая страница</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<section class="lines">
+		<div class="container">
+			<div class="vertical-line vertical-line_first"></div>
+			<div class="vertical-line vertical-line_second"></div>
+			<div class="vertical-line vertical-line_third"></div>
+			<div class="vertical-line vertical-line_fourth"></div>
+		</div>
+	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
